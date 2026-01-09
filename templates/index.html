@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>StudyNest</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>StudyNest 🌱</h1>
+        <p class="subtitle">A calm place to organize your studies</p>
+
+        <div class="card">
+            <p>This is your first StudyNest page.</p>
+            <p>You are building something real.</p>
+        </div>
+    </div>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>StudyNest</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="card">
+    <h1>StudyNest 🌱</h1>
+    <p>Your calm place to plan and grow.</p>
+
+    <form method="POST">
+        <input type="text" name="task" placeholder="Enter a study task" required>
+        <br><br>
+        <button type="submit">Add Task</button>
+    </form>
+
+    <ul>
+    {% for task in tasks %}
+        <li>{{ task }}</li>
+    {% endfor %}
+    </ul>
+</div>
+
+        <h1>StudyNest 🌱</h1>
+        <p>Your calm place to plan and grow.</p>
+    </div>
+</body>
+</html>
